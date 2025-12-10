@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM Demo</title>
+    <style>
+        .hidden { display: none; }
+        .highlight { background-color: yellow; }
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        input { padding: 8px; margin: 5px; }
+        li { list-style: none; background: #f0f0f0; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1 id="judul">Judul Awal</h1>
+    <p id="deskripsi">Deskripsi awal</p>
+    
+    <button id="tombol">Klik Saya</button>
+    
+    <hr>
+    
+    <input type="text" id="inputNama" placeholder="Masukkan nama Anda">
+    <button onclick="tampilkanNama()">Submit</button>
+    <p id="hasil"></p>
+    
+    <hr>
+    
+    <button id="toggleBtn">Toggle Content</button>
+    <div id="content">
+        <p>Ini adalah content yang bisa di-toggle</p>
+    </div>
+    
+    <hr>
+    
+    <h3>Tambah Item Ke List</h3>
+    <input type="text" id="itemBaru" placeholder="Item baru">
+    <button onclick="tambahItem()">Tambah</button>
+    <ul id="daftarItem"></ul>
+    
+    <hr>
+    
+    <form id="formData">
+        <input type="text" id="nama" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Submit Form</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
